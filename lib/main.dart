@@ -9,7 +9,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //set Orientation to Landscape Only
-
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.landscapeLeft,
       DeviceOrientation.landscapeRight,
@@ -17,6 +16,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'Nour_Clock',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: color3),
       home: Clock(),
     );
